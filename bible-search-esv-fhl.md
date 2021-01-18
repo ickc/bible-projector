@@ -33,6 +33,9 @@ header-includes: |
         sec::before {
             content: ':';
         }
+        sec::after {
+            content: "\00a0";
+        }
     </style>
 include-after: |
     <!-- https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp -->
