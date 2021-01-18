@@ -12,6 +12,9 @@ docs/%.html: %.md
 	--css=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css \
 	--css=https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/css/common.min.css
 
+clean:
+	rm -rf docs
+
 print-%:
 	$(info $* = $($*))
 
