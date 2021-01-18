@@ -13,7 +13,7 @@ docs/%.html: %.md
 	--css=https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/css/common.min.css
 docs/index.html: README.markdown
 	mkdir -p $(@D)
-	pandoc -s -o $@ $< \
+	sed 's/\.md/\.html/g' $< | pandoc -s -o $@ \
 	--css=https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/fonts/fonts.min.css \
 	--css=https://cdn.jsdelivr.net/gh/ickc/markdown-latex-css/css/common.min.css
 
