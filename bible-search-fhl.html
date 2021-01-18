@@ -38,7 +38,7 @@
     function showBible(){
         var xmlHttp = new XMLHttpRequest();
         var ref = document.getElementById("bible-ref").value;
-        const url='http://bible.fhl.net/ajax/qb.php?chineses=' + ref.slice(0, 1) + '&chap=' + ref.slice(1);
+        const url='https://bible.fhl.net/ajax/qb.php?chineses=' + ref.slice(0, 1) + '&chap=' + ref.slice(1);
         xmlHttp.open( "GET", url, false ); // false for synchronous request
         xmlHttp.send( null );
         display_bible.innerHTML = xmlHttp.responseText;
