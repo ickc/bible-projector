@@ -1,5 +1,19 @@
 ---
 title: Bible projector w/ fhl.net
+header-includes: |
+    <!-- For fhl xml -->
+    <style>
+        engs, status, record_count, v_name, version, prev, next{
+            visibility: hidden;
+        }
+        chineses::before {
+            content: '\A';
+            white-space: pre;
+        }
+        sec::before {
+            content: ':';
+        }
+    </style>
 ...
 
 <!-- https://stackoverflow.com/a/4033310/5769446 -->
